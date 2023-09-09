@@ -1,5 +1,6 @@
 class Market
-  attr_reader :name,
+  attr_reader :id,
+              :name,
               :street,
               :city,
               :county,
@@ -11,14 +12,15 @@ class Market
 
 
   def initialize(market_data)
-    @name = market_data[:name]
-    @street = market_data[:street]
-    @city = market_data[:city]
-    @county = market_data[:county]
-    @state = market_data[:state]
-    @zip = market_data[:zip]
-    @lat = market_data[:lat]
-    @lon = market_data[:lon]
-    @vendor_count = market_data[:vendor_count]
+    @id = market_data[:id].to_i
+    @name = market_data[:attributes][:name]
+    @street = market_data[:attributes][:street]
+    @city = market_data[:attributes][:city]
+    @county = market_data[:attributes][:county]
+    @state = market_data[:attributes][:state]
+    @zip = market_data[:attributes][:zip]
+    @lat = market_data[:attributes][:lat]
+    @lon = market_data[:attributes][:lon]
+    @vendor_count = market_data[:attributes][:vendor_count]
   end
 end
