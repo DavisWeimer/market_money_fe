@@ -1,8 +1,14 @@
 <div class="vendor-show">
   <h1 class="vendor-name"><%= @vendor.name %></h1>
-  <p class="contact-info">Contact Info:</p>
-  <p class="vendor-contact-name">name: <%= @vendor.contact_name %></p>
-  <p class="vendor-phone">phone: <%= @vendor.contact_phone %></p><br>
-  <p class="accepts-credit">Credit Accepted?: <%= @vendor.credit_accepted ? "Yes" : "No" %></p><br>
-  <p class="description">Description: <%= @vendor.description %></p>
+  <div class="vendor-info">
+    <p class="label"><strong>Contact Info:</strong></p>
+    <p class="vendor-contact-name"><strong>name:</strong> <%= @vendor.contact_name %></p>
+    <p class="vendor-phone"><strong>phone:</strong> <%= @vendor.contact_phone %></p>
+    <p class="label"><strong>Credit Accepted?</strong></p>
+    <p class="accepts-credit <%= @vendor.credit_accepted ? 'green' : 'red' %>">
+      <%= @vendor.credit_accepted ? "Yes" : "No" %>
+    </p>
+    <p class="label"><strong>Description:</strong></p>
+    <p class="description"><%= @vendor.description %></p>
+  </div>
 </div>

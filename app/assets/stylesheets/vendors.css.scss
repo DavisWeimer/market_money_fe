@@ -1,17 +1,17 @@
 .custom-font {
   font-family: 'Poppins Regular', sans-serif;
 }
-
+.label {
+  font-weight: bold;
+  color: #333; 
+}
 .vendor-show {
   font-family: 'Poppins Regular', sans-serif;
-  max-width: 0 auto; 
-  margin: 0 auto;
+  max-width: 0 auto;
+  margin: 0 auto; 
   padding: 20px; 
-  text-align: left;
+  text-align: center;
 
-  // border: 1px solid #ccc;
-  // border-radius: 5px;
-  // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .vendor-name {
@@ -24,39 +24,48 @@
 .contact-info {
   font-size: 24px; 
   color: #333;
-  margin-bottom: 10px;
   padding: 10px; 
   text-align: left; 
 }
 
-.vendor-contact-name {
-  font-size: 16px; 
-  margin-bottom: 15px;
-}
+.vendor-info{
+  text-align: left; 
+  border: 1px solid #ccc;
+  padding: 20px; 
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+  .vendor-contact-name {
+    font-size: 16px;
+    padding: 10px; 
+    margin-bottom: 15px;
+  }
+  
+  .vendor-phone {
+    font-size: 16px;
+    padding: 10px; 
+    margin-bottom: 15px;
+  }
+  
+  .accepts-credit {
+    font-size: 16px;
+    padding: 10px; 
+    color: #00ff3c; 
+    margin-bottom: 15px;
+  }
 
-.vendor-phone {
-  font-size: 16px; 
-  margin-bottom: 15px;
-}
+  .green {
+    color: green;
+  }
 
-.accepts-credit {
-  font-size: 16px; 
-  // color: #007bff; 
-  margin-bottom: 15px;
-}
-
-.description {
-  font-size: 16px; 
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.back-link {
-  font-size: 16px; 
-  color: #007bff;
-  text-decoration: none; 
-}
-
-.back-link:hover {
-  text-decoration: underline;
+  .red {
+    color: red;
+  }
+  
+  .description {
+    font-size: 16px;
+    padding: 10px; 
+    color: #333;
+    margin-bottom: 20px;
+  }
 }
