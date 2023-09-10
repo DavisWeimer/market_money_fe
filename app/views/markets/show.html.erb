@@ -7,7 +7,7 @@
     <ul class="vendor-list">
       <% @vendors.each do |vendor| %>
         <li class="vendor-list-item">
-          <%= link_to vendor.name, vendor_path(vendor) %>
+          <%= link_to vendor.name, vendor_path(vendor.id) %>
         </li>
       <% end %>
     </ul>

@@ -543,4 +543,57 @@ http_interactions:
         potato chips and dip","contact_name":"Valrie Dickens","contact_phone":"1-638-142-3625","credit_accepted":true,"states_sold_in":["North
         Carolina"]}}]}'
   recorded_at: Sun, 10 Sep 2023 18:27:45 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/markets/331074
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"7461d7ee202ae938e9e0332215398e69"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e329ee5d-0147-491a-9c01-8190962b2bce
+      X-Runtime:
+      - '0.093584'
+      Server-Timing:
+      - start_processing.action_controller;dur=2.96, sql.active_record;dur=27.21,
+        instantiation.active_record;dur=0.48, process_action.action_controller;dur=72.39
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"331074","type":"market","attributes":{"name":"Yancey
+        County Farmers'' Market","street":"Town Center","city":"Burnsville","county":"Yancey","state":"North
+        Carolina","zip":"28714","lat":"35.916916","lon":"-82.300264","vendor_count":13}}]}'
+  recorded_at: Sun, 10 Sep 2023 18:56:28 GMT
 recorded_with: VCR 6.2.0
