@@ -1,24 +1,24 @@
-<h1>Markets</h1>
+<div class="markets-index">
+  <h1 class="page-title">Markets</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>City</th>
-      <th>State</th>
-      <th>Action</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @markets.each do |market| %>
-    <div id="market_<%= market.id %>"  >
+  <table>
+    <thead>
       <tr>
-        <td><%= market.name %></td>
-        <td><%= market.city %></td>
-        <td><%= market.state %></td>
-        <td><%= button_to "View Details", market_path(market.id), method: :get %></td>
+        <th>Name</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Action</th>
       </tr>
-    </div>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      <% @markets.each do |market| %>
+        <tr id="market_<%= market.id %>">
+          <td><%= market.name %></td>
+          <td><%= market.city %></td>
+          <td><%= market.state %></td>
+          <td><%= button_to "View Details", market_path(market.id), method: :get %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

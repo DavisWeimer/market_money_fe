@@ -1,0 +1,15 @@
+<div class="markets-show"> 
+  <div class="market-details">
+    <h1 class="market-name"><%= @market.name %></h1>
+    <p class="market-address"><%= @market_address %></p>
+
+    <h2 class="vendors-heading">Vendors at our Market:</h2>
+    <ul class="vendor-list">
+      <% @vendors.each do |vendor| %>
+        <li class="vendor-list-item">
+          <%= link_to vendor.name, vendor_path(vendor) %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
