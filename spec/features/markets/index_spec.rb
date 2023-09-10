@@ -65,9 +65,9 @@ RSpec.describe "Market", type: :feature do
     it "link redirects to markets show page", :vcr do
       market = @markets.first
       visit markets_path
-      
+
       within "#market_#{market.id}" do
-        click_link "View Details"
+        click_button "View Details"
       end
       expect(current_path).to eq(market_path(market.id))
     end

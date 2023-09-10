@@ -4,6 +4,7 @@ class MarketsController < ApplicationController
   end
 
   def show
-    
+    @market = MarketsFacade.get_a_market(params[:id]).first
+    require 'pry'; binding.pry
   end
 end

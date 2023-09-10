@@ -11,4 +11,8 @@ class MarketsService
   def self.all_markets
     get_url("markets")
   end
+
+  def self.get_market(id)
+    get_url("markets/#{id}")
+  end
 end
