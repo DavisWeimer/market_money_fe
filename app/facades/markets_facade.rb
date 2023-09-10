@@ -8,11 +8,11 @@ class MarketsFacade
   def self.get_a_market(id)
     MarketsService.get_market(id)[:data].map do |market_data|
       Market.new(market_data)
-    end
+    end.first
   end
 
   def self.readable_address(id)
-    market = get_a_market(id).first
+    market = get_a_market(id)
     address = "#{market.street}, #{market.city}, #{market.state} #{market.zip}"
   end
 

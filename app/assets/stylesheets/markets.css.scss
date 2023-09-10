@@ -38,58 +38,56 @@
 // SHOW STYLING
 .markets-show {
   .market-details {
-    max-width: 800px; /* Adjust the maximum width as needed */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 20px; /* Add padding for spacing */
-    text-align: center; /* Center-align text */
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 20px; 
+    text-align: center; 
 
-    /* Add a border and box shadow for visual separation */
+    
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-
-  /* Style for the market name */
+  
   .market-name {
-    font-size: 28px; /* Adjust the font size */
-    color: #333; /* Text color */
-    margin-bottom: 10px; /* Add space below the name */
+    font-size: 28px; 
+    color: #333; 
+    margin-bottom: 10px; 
+    
   }
-
-  /* Style for the market address */
+  
   .market-address {
-    font-size: 18px; /* Adjust the font size */
-    color: #777; /* Text color */
-    margin-bottom: 20px; /* Add space below the address */
+    font-size: 18px;
+    color: #777; 
+    margin-bottom: 20px; 
   }
 
-  /* Style for the vendors heading */
+  
   .vendors-heading {
-    font-size: 24px; /* Adjust the font size */
-    color: #333; /* Text color */
-    margin-bottom: 10px; /* Add space below the heading */
+    font-size: 24px; 
+    color: #333;
+    margin-bottom: 10px; 
   }
 
-  /* Style for the vendor list */
+  
   .vendor-list {
-    list-style-type: none; /* Remove bullets/numbers from list */
-    padding: 0; /* Remove default list padding */
+    list-style-type: none;
+    padding: 0; 
   }
-
-  /* Style for each vendor list item */
+  
   .vendor-list-item {
-    margin-bottom: 8px; /* Add space between vendor items */
+    margin-bottom: 8px; 
   }
 
-  /* Style for vendor links */
+  
   .vendor-list-item a {
-    text-decoration: none; /* Remove underlines from links */
-    color: #007bff; /* Link color */
-    font-weight: bold; /* Bold text for links */
+    text-decoration: none; 
+    color: #007bff;
+    font-weight: bold; 
   }
 
-  /* Style for hover effect on vendor links */
+  
   .vendor-list-item a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline;
   }
 }

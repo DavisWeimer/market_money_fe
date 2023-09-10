@@ -7,4 +7,8 @@ class VendorsService
     response = conn.get(url)
     JSON.parse(response.body, symbolize_names: true)
   end
+
+  def self.get_vendor(id)
+    get_url("vendors/#{id}")
+  end
 end

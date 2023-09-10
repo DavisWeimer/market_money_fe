@@ -10,7 +10,7 @@ RSpec.describe "Market", type: :feature do
   end
 
   describe "Show Page" do
-    it "market's name and readable address", :vcr do
+    it "displays market's name and readable address and link to vendors", :vcr do
       visit market_path(@market.id)
 
       expect(page).to have_css(".market-name", text: @market.name)

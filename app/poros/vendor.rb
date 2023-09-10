@@ -4,7 +4,7 @@ class Vendor
               :description,
               :contact_name,
               :contact_phone,
-              :credit_accpeted
+              :credit_accepted
   def initialize(vendor_data)
     @id = vendor_data[:id].to_i
     @name = vendor_data[:attributes][:name]
