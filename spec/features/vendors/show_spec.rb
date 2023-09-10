@@ -13,10 +13,13 @@ RSpec.describe "Vendor", type: :feature do
   describe "Show Page" do
     it "displays vendor info", :vcr do
       visit vendor_path(@vendor.id)
-      save_and_open_page
-      # expect(page).to have_css(".vendor-name", text: @vendor.name)
-      # expect(page).to have_css(".vendor-info", text: @vendor.contact_phone)
 
+      expect(page).to have_css(".vendor-name", text: @vendor.name)
+      expect(page).to have_css(".contact-info", text: "Contact Info:")
+      expect(page).to have_css(".vendor-contact-name", text: @vendor.contact_name)
+      expect(page).to have_css(".vendor-phone", text: @vendor.contact_phone)
+      expect(page).to have_css(".accepts-credit", text: @vendor.credit_accepted ? "Yes" : "No")
+      expect(page).to have_css(".description", text: @vendor.description)
     end
   end
 end
